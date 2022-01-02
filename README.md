@@ -45,13 +45,15 @@ Lists the contacts in a [VCF](https://en.wikipedia.org/wiki/Variant_Call_Format)
   - `KelimeBilmece`  
     Word guessing game played over TCP/IP. (Computer Networks)
   - `FindClosestPoints`  
-    Finds closest points in given set. (Computer Algorithm Design)
+    Finds closest points in given set. (Computer Algorithms)
   - `duplicate_detector`  
     Finds duplicate files in a directory. Recursively scans subdirectories. (Computer Programming IV)
   - `Sort_Locale`  
     Sorts lines of a text file. Works like GNU's `sort` utility but also sorts locale-specific characters correctly. (Computer Programming IV)
   - `mSTP`  
-    "Multiple Travelling Salesman Problem" solver.  (Computer Programming IV)
+    "Multiple Travelling Salesman Problem" solver. (Computer Programming IV)
+  - `Sorting_Algorithms`
+    Implementation of sorting algorithms. (Computer Algorithm Design)
 
 - `Müsrifmatik`  
   ***[visible confusion]*** <!-- I'm not sure what it is supposed to be, either. -->
