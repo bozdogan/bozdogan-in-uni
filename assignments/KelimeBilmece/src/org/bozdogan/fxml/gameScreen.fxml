@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bozdogan.control.GameScreen">
+   <top>
+      <VBox>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <children>
+            <Label text="Used Words: ">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="wordsLb" text="BİLGİSAYAR, ARAŞTIRMA, MASA, SAKİN, İNSAN, ANLATMAK, AKŞAM" wrapText="true">
+               <font>
+                  <Font name="Segoe Script Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="16.0">
+               <children>
+                  <TextField fx:id="wordTx" promptText="Enter first word" HBox.hgrow="SOMETIMES">
+                     <font>
+                        <Font name="Consolas Bold" size="36.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="sendBt" defaultButton="true" mnemonicParsing="false" onAction="#send" text="Send" HBox.hgrow="SOMETIMES">
+                     <font>
+                        <Font name="Rockwell" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Label fx:id="statusLb" text="Time: 60sec">
+               <font>
+                  <Font name="Rockwell" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>

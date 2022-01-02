@@ -1,0 +1,37 @@
+BIM304 - Computer Algorithm Design
+Homework II
+
+Develop an application that finds the closest pair of a set of points recursively. Assume that there are at least two
+points in the input and that all the points are distinct.
+
+If the input is
+4
+1.0 1.0
+2.0 2.0
+4.0 5.0
+7.0 8.0
+then the output should be : (2,2)-(1,1)= 1.414214
+
+Details
+
+Size of the input is unknown, it can be large up to the limits of physical memory
+The format of the data is as follows
+- The first element specify the number of points in the input data
+- Subsequent line contains the x-coordinate of a point followed by the y-coordinate, separated by a single
+space (check the given input files)
+
+The output must show the closest pair of points and the distance between them in the given format in example
+The formula to compute distance between two points a=(x1,y1) and b=( x2,y2) is
+Your algorithm must fit into the divide-and-conquer strategy
+The running time should be Θ(n⋅logn) where n is the number of points
+
+Submissions may be written in Java, when you pick a language, you have to do your other homework with the
+same platform
+
+Grouping is not allowed in this homework. Please obey the ethical codes. Cheaters will be punished.
+Sample project files is given. Complete the project by filling in the necessary parts. Make your assignment as
+the given format :
+- FindClosest.java
+- PointPair.java
+
+You may find some explanations in the code files as comment.

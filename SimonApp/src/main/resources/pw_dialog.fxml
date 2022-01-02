@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="213.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.bozdogan.gui.PwDialog">
+    <VBox maxWidth="300.0" prefWidth="280.0" spacing="6.0">
+        <StackPane.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+        </StackPane.margin>
+        <Label fx:id="headerLb" alignment="BOTTOM_LEFT" prefWidth="300.0" text="HEADER" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+         <padding>
+            <Insets bottom="4.0" />
+         </padding></Label>
+      <Separator prefWidth="200.0" />
+        <HBox alignment="CENTER_LEFT" spacing="6.0">
+            <VBox.margin>
+                <Insets bottom="10.0" />
+            </VBox.margin>
+            <Pane HBox.hgrow="SOMETIMES" />
+            <Label text="Current Password" />
+            <PasswordField fx:id="currPwTx" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" spacing="6.0">
+            <Pane HBox.hgrow="SOMETIMES" />
+            <Label text="New Password" />
+            <PasswordField fx:id="newPwTx" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="20.0" spacing="6.0">
+            <Pane HBox.hgrow="SOMETIMES" />
+            <Label text="(again)" />
+            <PasswordField fx:id="newPwAgainTx" />
+        </HBox>
+        <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="105.0" spacing="24.0">
+            <Pane HBox.hgrow="SOMETIMES" />
+            <Button fx:id="okBt" defaultButton="true" mnemonicParsing="false" onAction="#confirmAction" prefWidth="60.0" text="OK" />
+            <Button fx:id="cancelBt" cancelButton="true" layoutX="238.0" layoutY="10.0" mnemonicParsing="false" onAction="#closeWindow" prefWidth="64.0" text="Cancel" />
+        </HBox>
+        <Label fx:id="statusLb" text="STATUS" />
+    </VBox>
+</StackPane>

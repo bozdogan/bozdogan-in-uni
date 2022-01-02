@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.bozdogan.control.MainMenu">
+
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="12.0"
+            BorderPane.alignment="TOP_CENTER">
+         <BorderPane.margin>
+            <Insets top="24.0"/>
+         </BorderPane.margin>
+         <Button minWidth="250.0" mnemonicParsing="false" onAction="#hostGameSequence"
+                 text="Start New Game" textFill="#212121">
+            <font>
+               <Font name="Rockwell" size="24.0"/>
+            </font>
+         </Button>
+         <Button minWidth="250.0" mnemonicParsing="false" onAction="#joinGameSequence"
+                 text="Join Game" textFill="#212121">
+            <font>
+               <Font name="Rockwell" size="24.0"/>
+            </font>
+         </Button>
+         <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0"
+               VBox.vgrow="SOMETIMES">
+            <VBox.margin>
+               <Insets bottom="20.0" right="20.0"/>
+            </VBox.margin>
+            <Pane prefHeight="200.0" prefWidth="200.0" HBox.hgrow="SOMETIMES"/>
+            <Button minWidth="150.0" mnemonicParsing="false" onAction="#exitWindow" text="Quit">
+               <font>
+                  <Font name="Rockwell" size="24.0"/>
+               </font>
+            </Button>
+         </HBox>
+      </VBox>
+   </center>
+   <top>
+      <VBox alignment="TOP_CENTER" spacing="4.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+         </BorderPane.margin>
+         <Label text="Word Chain" textFill="#212121">
+            <font>
+               <Font name="Stencil" size="64.0"/>
+            </font>
+         </Label>
+         <Label text="Less interesting subtitle" textFill="#212121">
+            <font>
+               <Font name="Rockwell" size="18.0"/>
+            </font>
+         </Label>
+      </VBox>
+   </top>
+</BorderPane>
