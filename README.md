@@ -2,7 +2,7 @@
 
 Somewhat silly projects I've written in college.
 
-- **[`little-scripts`](./little-scripts/README.md)**
+- **[`little-scripts`](./little-scripts/)**
   These are some little scripts I kept.
 
 - `Subtitle_Timestamp_Shifter`
