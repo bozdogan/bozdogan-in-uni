@@ -1,6 +1,6 @@
 # B.Ozdoğan in Uni
 
-Projects that I wrote in my college years.
+Somewhat silly projects I've written in college.
 
 - **[`little-scripts`](./little-scripts/README.md)**
   These are some little scripts I kept.
